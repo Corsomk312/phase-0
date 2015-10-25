@@ -1,3 +1,14 @@
+4.2.1 - Defining Variables
+https://github.com/Corsomk312/phase-0/blob/master/week-4/defining-variables.rb
+
+4.2.2 - Simple Strings
+https://github.com/Corsomk312/phase-0/blob/master/week-4/simple-string.rb
+
+4.2.3 - Local variables
+
+https://github.com/Corsomk312/phase-0/blob/master/week-4/basic-math.rb
+
+
 #What does puts do?
 
 puts returns a value of nil, and prints the value of the string to the screen on a new line
