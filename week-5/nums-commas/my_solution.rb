@@ -17,30 +17,46 @@
 
 
 # 1. Initial Solution
-def separate_comma(num)
-	array = num.to_s.chars.to_a
+
+# def separate_comma(num)
+# 	array = num.to_s.chars.to_a
 	
-	if array.length < 4
-		array = array.join.to_s
-		return array
-	elsif 
-		array.reverse!
-		i = 3
-		while i < array.length
-			array.insert(i, ",")
-			i += 4
-		end
-		array.reverse!
-		array = array.join.to_s
-		return array
-	end
-end
+# 	if array.length < 4
+# 		array = array.join.to_s
+# 		return array
+# 	elsif 
+# 		array.reverse!
+# 		i = 3
+# 		while i < array.length
+# 			array.insert(i, ",")
+# 			i += 4
+# 		end
+# 		array.reverse!
+# 		array = array.join.to_s
+# 		return array
+# 	end
+# end
+
 
 
 
 
 # 2. Refactored Solution
 
+def separate_comma(num)
+	str_num = num.to_s.reverse
+
+	if str_num.length < 4
+		return str_num
+	else
+		i = 3
+		while i < str_num.length
+			str_num.insert(i, ',')
+			i += 4
+		end
+	end
+	return str_num.reverse
+end
 
 
 
@@ -55,7 +71,7 @@ end
 
 
 # What Ruby method(s) did you use when refactoring your solution? What difficulties did you have implementing it/them? Did it/they significantly change the way your code works? If so, how?
-# I used the methods .join and .chars to break down and reform my array into and from a string.
+# I kept it as a string for my refactoring, and the only different method I used was .insert to just put a comma into the string without having to switch it to an array.
 
 
 # How did you initially iterate through the data structure?
