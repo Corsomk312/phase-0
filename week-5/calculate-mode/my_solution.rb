@@ -65,6 +65,8 @@ def mode(array)
   output
 end
 
+# mode([5,5,5,6,7,6,6, 8, 8, 8])
+
 
 # 4. Reflection
 # Which data structure did you and your pair decide to implement and why?
