@@ -1,0 +1,53 @@
+  if serving_size_mod == 0
+    return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}"
+  else
+    return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+  end
+  
+#   case serving_size_mod
+#   when 0
+#     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}"
+#   else
+#     return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+#   end
+end
+
+p serving_size_calc("pie", 7)
+p serving_size_calc("pie", 8)
+p serving_size_calc("cake", 5)
+p serving_size_calc("cake", 7)
+p serving_size_calc("cookie", 1)
+p serving_size_calc("cookie",
+
+  if serving_size_mod > 0
+    if serving_size_mod >= 7
+      extra_items = "You should bake 1 pie"
+      serving_size_mod += -7
+    elsif serving_size_mod >= 5
+      extra_items = 
+
+
+  #Assigning value of our item_to_make from the library, that we already determined was in the library with prior checks. Uses .values_at to create a 1 element array for the value with key 'item_to_make'
+  #serving_size_mod finds any leftover ingredients we have.
+  serving_size = cookbook[item_to_make]
+  serving_size_mod = order_quantity % serving_size
+
+  #Determining if there are any leftover ingredients and returning how many of item_to_make you can make and how much you have leftover.
+  #Going to write code for suggested baking items based on your leftover ingredients. 
+
+  def serving_size_calc(item_to_make, order_quantity)
+  cookbook = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+  # error_counter = 3
+
+  #Going through to make sure item_to_make matches a key in library. Lowers error counter when it does not. 
+  #refactor me, please.
+  
+  unless cookbook.include?(item_to_make) == true
+     raise ArgumentError.new("#{item_to_make} is not a valid input")
+  end
+  
+  # library.each do |food|
+  #   if library[food] = library[item_to_make]
+  #     p error_counter -= -1
+  #   end
+  # end
