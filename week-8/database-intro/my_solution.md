@@ -13,7 +13,8 @@ ORDER BY population_density;
 10. SELECT regions.region_name, states.state_name FROM states INNER JOIN regions ON states.region_id=regions.id ORDER BY states.region_id
 
 SCHEMA
-https://github.com/Corsomk312/phase-0/blob/master/week-8/database-intro/Clueless_Schema.jpg
+
+https://github.com/Corsomk312/phase-0/blob/master/week-8/database-intro/Clueless_Schema.JPG
 
 What are databases for?
 Databases are for organizing large amounts of information. Even larger than one can handle in a single array or hash/object. Databases can hold many tables, and store information on a much larger scale. 
