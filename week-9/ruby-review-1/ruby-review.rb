@@ -58,3 +58,15 @@ test_4 = "1,234,546,879,654,321"
 assert { test_4 == separate_comma(1234546879654321)}
 
 # 5. Reflection
+
+# What concepts did you review in this challenge?
+
+# Well I learned about Assert statements. There was good syntax review here and just overall it was good getting more practice in ruby.
+
+# What is still confusing to you about Ruby?
+
+# Some of the regular expressions confuse me a little bit. Also, I'm not sure what the &:join does in our commented out code, but it works without that, and I have yet to do any exercises or read more than a brief overview of regular expressions.
+
+# What are you going to study to get more prepared for Phase 1?
+
+# Just going to go over some of the bigger articles and review a couple of chapters in the well grounded rubyist before the in person sessions begin!
