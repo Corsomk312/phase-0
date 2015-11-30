@@ -36,3 +36,15 @@ document.getElementsByClassName('release-4')[0].style.fontSize = '2em';
 
 var template = document.getElementById('hidden');
 document.body.appendChild(template.content.cloneNode(true));
+
+// <!-- Add your reflection here -->
+
+// <!-- What did you learn about the DOM?
+
+// It kind of reiterated the importance of keeping your HTML organized as you write it. It was good to see how elements interact with each other within the DOM too, like having to put [0] for the children of the element you find. That took me a hot minute to figure out. 
+
+// What are some useful methods to use to manipulate the DOM?
+
+// Keeping organized within the HTML. Getting elements by ID and ClassName I think will end up being really useful. Also, being able to change the color of the element without using CSS was nice. -->
+
+// <!-- # This challenge took me [1] hour. -->
